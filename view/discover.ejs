@@ -1,0 +1,10 @@
+<% include head.ejs %>
+<title>Discover - Match</title>
+<h1>Find new people</h1>
+<% for (var index = 0; index < members.length; index++) { %>
+<h2><a href="/<%= members[index].name %>"><%= members[index].name %></a></h2>
+<% } %>
+
+<p>
+    <a href=/question>Answer some questions about youself</a>
+</p>
